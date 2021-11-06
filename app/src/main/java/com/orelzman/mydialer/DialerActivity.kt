@@ -9,8 +9,11 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.orelzman.mydialer.ui.theme.MyDialerTheme
+import dagger.hilt.EntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
-class MainActivity : ComponentActivity() {
+@HiltAndroidApp
+class DialerActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
