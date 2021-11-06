@@ -4,7 +4,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.orelzman.mydialer.domain.model.Call
+import com.orelzman.mydialer.domain.model. Call
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
  */
 interface CallRepository {
     fun getCalls(): Flow<List<Call>>
-    suspend fun getCallById(callId: String)
+    suspend fun getCallById(callId: String): Call
     suspend fun updateCall(call: Call)
     suspend fun deleteCall(callId: String)
     suspend fun insertCall(call: Call)

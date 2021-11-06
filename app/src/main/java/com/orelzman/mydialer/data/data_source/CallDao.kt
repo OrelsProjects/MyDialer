@@ -20,6 +20,5 @@ interface CallDao {
     suspend fun insertCall(call: Call)
 
     @Query("SELECT * FROM Call WHERE callId = :callId")
-    fun getCallById(callId: String)
-
+    fun getCallById(callId: String): Call
 }

@@ -14,10 +14,10 @@ import java.util.*
  * @author Orel Zilberman, 6.11.2021
  */
 data class Call(
-    @PrimaryKey val CallId: String,
     @ColumnInfo val date: Date,
     @ColumnInfo val duration: Long,
-    @ColumnInfo val isActive: Boolean
+    @ColumnInfo val isActive: Boolean,
+    @PrimaryKey val CallId: String,
 ) {
 
 }

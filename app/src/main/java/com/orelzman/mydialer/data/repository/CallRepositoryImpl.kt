@@ -11,7 +11,7 @@ class CallRepositoryImpl(
 
     override fun getCalls(): Flow<List<Call>> = dao.getCalls()
 
-    override suspend fun getCallById(callId: String) = dao.getCallById(callId = callId)
+    override suspend fun getCallById(callId: String): Call = dao.getCallById(callId = callId)
 
     override suspend fun updateCall(call: Call) = dao.updateCall(call = call)
 
